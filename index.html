@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entre Doces e Queijos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'store-primary': '#8B4513',
+                        'store-secondary': '#FFD700',
+                        'store-accent': '#22C55E',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="pt-16">
+    <header class="fixed top-0 left-0 right-0 bg-white shadow-lg z-50">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16">
+            <a href="#inicio" class="text-2xl font-extrabold text-store-primary tracking-tight">
+                Entre Doces e Queijos
+            </a>
+            
+            <div class="space-x-4">
+                <a href="#inicio" class="text-gray-600 hover:text-store-primary transition duration-150 ease-in-out font-medium">Início</a>
+                <a href="#laticinios" class="text-gray-600 hover:text-store-primary transition duration-150 ease-in-out font-medium">Produtos</a>
+                <a href="#sobre" class="text-gray-600 hover:text-store-primary transition duration-150 ease-in-out font-medium">Sobre Nós</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="max-w-7xl mx-auto">
+        <section id="inicio" class="pt-8 mb-12">
+            <div class="relative w-full overflow-hidden rounded-xl shadow-2xl h-64 sm:h-96">
+                <img src="img/fundo2.jpeg" 
+                     alt="Imagem de destaque com queijos, doces e laticínios frescos" 
+                     class="w-full h-full object-cover transition duration-500 ease-in-out hover:scale-105"
+                     onerror="this.onerror=null; this.src='https://placehold.co/1200x400/D2B48C/8B4513?text=Entre+Doces+e+Queijo'">
+                
+                <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
+                    <h1 class="text-4xl sm:text-6xl font-black text-white text-center p-4 leading-tight">
+                        <span class="block bg-store-primary bg-opacity-80 p-2 rounded-lg">Entre Doces e Queijos</span>
+                    </h1>
+                </div>
+            </div>
+        </section>
+
+        <section id="laticinios" class="px-4 sm:px-6 lg:px-8 mb-16 pt-10">
+            <h2 class="text-4xl font-bold text-center text-store-primary mb-10 border-b-4 border-store-secondary inline-block mx-auto pb-2">
+                Laticínios e Queijos
+            </h2>
+            <div id="laticinios-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            </div>
+        </section>
+
+        <section id="doces" class="px-4 sm:px-6 lg:px-8 mb-16 pt-10">
+            <h2 class="text-4xl font-bold text-center text-store-primary mb-10 border-b-4 border-store-secondary inline-block mx-auto pb-2">
+                Doces e Delícias
+            </h2>
+            <div id="doces-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            </div>
+        </section>
+
+        <section id="variados" class="px-4 sm:px-6 lg:px-8 mb-16 pt-10">
+            <h2 class="text-4xl font-bold text-center text-store-primary mb-10 border-b-4 border-store-secondary inline-block mx-auto pb-2">
+                Variedades
+            </h2>
+            <div id="variados-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            </div>
+        </section>
+
+        <section id="sobre" class="bg-store-primary text-white p-10 sm:p-16 rounded-xl shadow-2xl mb-16 mx-4 sm:mx-6 lg:mx-8">
+            <h2 class="text-3xl sm:text-4xl font-bold border-b-4 border-store-secondary pb-3 mb-6">
+                Sobre Nós
+            </h2>
+            <p class="text-lg leading-relaxed mb-4">
+                Somos a <strong>Entre Doces e Queijos</strong>, sua parada obrigatória para os melhores laticínios e delícias artesanais. Nossa missão é levar até a sua mesa o sabor autêntico e a qualidade que você merece, direto dos produtores.
+            </p>
+            <p class="text-lg leading-relaxed">
+                De queijos minas frescos a doces de leite de tacho, cada item é selecionado com carinho e paixão pela tradição. Nossos produtos são perfeitos para o café da manhã, o lanche da tarde ou para compor uma mesa de frios inesquecível.
+            </p>
+            <p class="mt-6 text-sm italic opacity-80">
+                <strong>Nosso foco é na experiência prática de compra!</strong> Clique nos produtos acima para fazer seu pedido de forma rápida e segura diretamente pelo WhatsApp.
+            </p>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-6 mt-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p>Rua Conceição Aparecida, 96 - Jardim Palmira</p>
+            <br>
+            <p>&copy; <span id="current-year"></span> Entre Doces e Queijos. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
