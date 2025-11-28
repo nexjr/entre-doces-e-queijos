@@ -28,9 +28,25 @@
                 Entre Doces e Queijos
             </a>
             
-            <div class="space-x-4">
+            <div class="space-x-4 flex items-center">
                 <a href="#inicio" class="text-gray-600 hover:text-store-primary transition duration-150 ease-in-out font-medium">Início</a>
-                <a href="#laticinios" class="text-gray-600 hover:text-store-primary transition duration-150 ease-in-out font-medium">Produtos</a>
+                
+                <!-- DROPDOWN DE PRODUTOS -->
+                <div class="relative inline-block text-left dropdown">
+                    <button class="text-gray-600 hover:text-store-primary transition duration-150 ease-in-out font-medium inline-flex items-center">
+                        Produtos
+                        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="dropdown-menu absolute right-0 mt-2 w-56 origin-top-right bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5 z-50 hidden" role="menu" aria-orientation="vertical" aria-labelledby="menu-button">
+                        <div class="py-1" role="none">
+                            <a href="#laticinios" class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100" role="menuitem">Laticínios e Queijos</a>
+                            <a href="#doces" class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100" role="menuitem">Doces e Delícias</a>
+                            <a href="#mercearia" class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100" role="menuitem">Mercearia e Petiscos Salgados</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- FIM DO DROPDOWN -->
+
                 <a href="#sobre" class="text-gray-600 hover:text-store-primary transition duration-150 ease-in-out font-medium">Sobre Nós</a>
             </div>
         </nav>
@@ -39,7 +55,7 @@
     <main class="max-w-7xl mx-auto">
         <section id="inicio" class="pt-8 mb-12">
             <div class="relative w-full overflow-hidden rounded-xl shadow-2xl h-64 sm:h-96">
-                <img src="img/fundo2.jpeg" 
+                <img src="img/fundo.jpeg" 
                      alt="Imagem de destaque com queijos, doces e laticínios frescos" 
                      class="w-full h-full object-cover transition duration-500 ease-in-out hover:scale-105"
                      onerror="this.onerror=null; this.src='https://placehold.co/1200x400/D2B48C/8B4513?text=Entre+Doces+e+Queijo'">
@@ -52,27 +68,30 @@
             </div>
         </section>
 
+        <!-- SEÇÃO LATICÍNIOS -->
         <section id="laticinios" class="px-4 sm:px-6 lg:px-8 mb-16 pt-10">
             <h2 class="text-4xl font-bold text-center text-store-primary mb-10 border-b-4 border-store-secondary inline-block mx-auto pb-2">
                 Laticínios e Queijos
             </h2>
-            <div id="laticinios-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div id="laticinios-grid" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 gap-8">
             </div>
         </section>
 
+        <!-- SEÇÃO DOCES -->
         <section id="doces" class="px-4 sm:px-6 lg:px-8 mb-16 pt-10">
             <h2 class="text-4xl font-bold text-center text-store-primary mb-10 border-b-4 border-store-secondary inline-block mx-auto pb-2">
                 Doces e Delícias
             </h2>
-            <div id="doces-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div id="doces-grid" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 gap-8">
             </div>
         </section>
 
-        <section id="variados" class="px-4 sm:px-6 lg:px-8 mb-16 pt-10">
+        <!-- SEÇÃO MERCEARIA/VARIEDADES -->
+        <section id="mercearia" class="px-4 sm:px-6 lg:px-8 mb-16 pt-10">
             <h2 class="text-4xl font-bold text-center text-store-primary mb-10 border-b-4 border-store-secondary inline-block mx-auto pb-2">
-                Variedades
+                Mercearia e Petiscos Salgados
             </h2>
-            <div id="variados-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div id="variados-grid" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 gap-8">
             </div>
         </section>
 
@@ -83,9 +102,10 @@
             <p class="text-lg leading-relaxed mb-4">
                 Somos a <strong>Entre Doces e Queijos</strong>, sua parada obrigatória para os melhores laticínios e delícias artesanais. Nossa missão é levar até a sua mesa o sabor autêntico e a qualidade que você merece, direto dos produtores.
             </p>
-            <p class="text-lg leading-relaxed">
+            <p class="text-lg leading-relaxed mb-4">
                 De queijos minas frescos a doces de leite de tacho, cada item é selecionado com carinho e paixão pela tradição. Nossos produtos são perfeitos para o café da manhã, o lanche da tarde ou para compor uma mesa de frios inesquecível.
             </p>
+
             <p class="mt-6 text-sm italic opacity-80">
                 <strong>Nosso foco é na experiência prática de compra!</strong> Clique nos produtos acima para fazer seu pedido de forma rápida e segura diretamente pelo WhatsApp.
             </p>
